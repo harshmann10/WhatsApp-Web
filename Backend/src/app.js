@@ -5,7 +5,7 @@ const cookieParser = require("cookie-parser");
 const cors = require("cors");
 require("dotenv").config();
 // const processPayloads = require("./scripts/processPayloads");
-const messageRoute = require("./routes/Messages");
+const messageRoute = require("./routes/messages");
 
 const port = process.env.PORT;
 const allowedOrigin = process.env.ALLOWED_ORIGIN;
