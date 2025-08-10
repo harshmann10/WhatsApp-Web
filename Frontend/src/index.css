@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+.message-out {
+    position: relative;
+}
+
+.message-out::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: -6px;
+    width: 12px;
+    height: 12px;
+    background: linear-gradient(135deg, #005c4b 0%, #005c4b 50%, transparent 50%, transparent);
+}
+
+.message-in {
+    position: relative;
+}
+
+.message-in::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: -6px;
+    width: 12px;
+    height: 12px;
+    background: linear-gradient(225deg, #202c33 0%, #202c33 50%, transparent 50%, transparent);
+}

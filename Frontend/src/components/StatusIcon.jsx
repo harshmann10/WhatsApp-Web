@@ -1,0 +1,11 @@
+
+const StatusIcon = ({ status }) => {
+    const icons = {
+        sent: <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6 9 17l-5-5" /></svg>,
+        delivered: <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 7 9 16 5 12" /><path d="m22 7-9 9-4-4" /></svg>,
+        read: <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#34B7F1" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 7 9 16 5 12" /><path d="m22 7-9 9-4-4" /></svg>,
+    };
+    return <span className="text-gray-500">{icons[status] || icons['sent']}</span>;
+};
+
+export default StatusIcon;
